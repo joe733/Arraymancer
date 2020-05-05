@@ -15,9 +15,7 @@ def forwardNeuron(a,b,c,x,y):
   ax = a @ x
   by = b @ y
   axpby = ax + by
-  axpbypc = axpby + c
-
-  return axpbypc
+  return axpby + c
 
 s = forwardNeuron(a,b,c,x,y).mean()
 
